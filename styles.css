@@ -1,0 +1,65 @@
+html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+ body {
+    margin: 0;
+    padding: 0;
+    
+}
+.top-view{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+.top-view-photo{
+    position: absolute;
+    margin-top:16% ;
+    left: 43%; 
+    transform: translate(-50%, -50%);
+    width: 100%; 
+    z-index: 1;
+    clip-path: inset(21.6% 0px 15.3% 0px);
+}
+.top-view-bg{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    z-index: -1;
+
+}
+.top-view-subtext{
+    position: absolute;
+    top: 71%;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1% 0;
+}
+.top-view-subtext-column{
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    letter-spacing: 3px;
+    position: relative;
+    font-size: 150%;
+}
+.top-view-name-container{
+    position: absolute;
+    top: 82%;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1% 0;
+}
+.top-view-name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1150%;
+    letter-spacing: 1px;
+}
