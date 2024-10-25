@@ -3,16 +3,24 @@ html{
     padding: 0;
     overflow-x: hidden;
     background-color: black;
+    scroll-behavior: smooth;
 }
  body {
     margin: 0;
     padding: 0;
-    
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* MAIN VIEW */
 .top-view{
     position: relative;
     padding: 0px;
     margin: 0px;
+    width: 100%;
+    height: 101vh;
+    overflow: hidden;
 }
 .top-view-photo{
     position: absolute;
@@ -21,7 +29,13 @@ html{
     transform: translate(-50%, -50%);
     width: 100%; 
     z-index: 1;
-    clip-path: inset(21.6% 0px 15.3% 0px);
+    clip-path: inset(21.6% 27% 15.3% 34%);
+    opacity: 1;
+    transition: 0.2s;
+}
+.top-view-photo:hover{
+    opacity:0.9;
+    cursor: pointer;
 }
 .top-view-bg{
     position: absolute;
@@ -32,11 +46,11 @@ html{
     object-fit: cover;
     display: block;
     z-index: -1;
-
+    mask-image: linear-gradient(to bottom, black 87%, transparent);
 }
 .top-view-subtext{
     position: absolute;
-    top: 71%;
+    top: 71.5%;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -48,10 +62,15 @@ html{
     letter-spacing: 3px;
     position: relative;
     font-size: 150%;
+    transition: 0.2s;
+}
+.top-view-subtext-column:hover{
+    color: #fc46a1;
+    cursor: pointer;
 }
 .top-view-name-container{
     position: absolute;
-    top: 82%;
+    top: 78%;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -60,6 +79,139 @@ html{
 }
 .top-view-name{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1150%;
+    font-size: 1000%;
     letter-spacing: 1px;
+}
+
+/* ABOUT ME */
+.about-me{
+    color: white;
+    display: flex;
+    padding-left: 100px;
+    padding-top: 80px;
+}
+.about-me-container{
+    margin-left: 20px;
+}
+.about-me-onport{
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-size: 25px;
+    letter-spacing: 5px;
+    padding-bottom: 50px;
+}
+.about-me-intro{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 90px;
+    padding-bottom: 10px;
+}
+.about-me-intro-content{
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+.about-me-educ{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 90px;
+    padding-bottom: 10px;
+}
+.about-me-educ-content{
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-size: 40px;
+}
+.about-me-educ-bullet{
+    font-family: 'TT Firs Neue Trl', sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+.about-me-photo-container{
+    padding-bottom: 20px;
+}
+.about-me-photo{
+    width: 40vw;
+    padding: 40px;
+    margin-right: 70px;
+}
+
+/* EXPERIENCE */
+.experience{
+    color: white;
+}
+.exp-label-container{
+    display: flex;
+    align-items: flex-start;
+}
+.exp-label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:150px;
+    padding-bottom: 50px;
+    margin-left: 70px;
+}
+
+.exp-label-dia{
+    width: 4%;
+    display: block;
+    margin-top: 54px;
+    margin-left: 50px;
+}
+.work-exp-container{
+    display: flex;
+    font-family: 'TT Firs Neue Trl', sans-serif;
+}
+.work-first-container{
+    padding: 40px;
+    align-items: center;
+
+}
+.work-first-label{
+    font-size: 50px;
+    align-items: center;
+    font-weight:bold;
+}
+.AH-label{
+    padding-top: 10px;
+    font-size: 35px;
+    display:flex;
+    margin-left:0px;
+}
+.asterisk-ahbpo{
+    margin: 10px;
+    width: 6%;
+}
+.marketing-officer-label{
+    padding: 20px;
+    font-size: 40px;
+    font-weight:bold;
+    margin-left: 60px;
+}
+.marketing-officer-list{
+    font-size: 40px;
+    margin-left: 50px;
+}
+.work-second-container{
+    padding: 40px;
+    margin: 40px;
+}
+.other-freelance-clients{
+    font-size: 40px;
+    font-weight:bold;
+}
+.work-exp-slg{
+    font-size: 40px;
+}
+.asterisk-slg{
+    width: 6%;
+}
+.work-exp-slg-list{
+    font-size: 40px;
+    margin-left: 50px;
+}
+.work-exp-gff{
+    font-size: 40px;
+}
+.asterisk-gff{
+    width: 6%;
+}
+.work-exp-gff-list{
+    font-size: 40px;
+    margin-left: 50px;
 }
